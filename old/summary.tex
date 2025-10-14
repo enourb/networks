@@ -1,0 +1,68 @@
+% Set up document class and packages
+\documentclass{article}
+\usepackage{amsmath}
+\usepackage{amssymb}
+\usepackage{graphicx}
+\usepackage{hyperref}
+\usepackage{geometry}
+\geometry{a4paper, margin=1in}
+\title{Endogenous Networks, Market Concentration, and Volatility}
+\author{Ethan Nourbash}
+\date{\today}
+
+\begin{document}
+\maketitle
+\section{Introduction}
+The number of inputs is important for two reasons:
+\begin{itemize}
+    \item Breadth: Modern consumer goods require many components
+    \item Resilience: Shocks to supply chains are common; geopolitical, climate, pandemic, tariffs, strikes
+\end{itemize}
+Each input contributes to cost of production in two ways:
+\begin{itemize}
+    \item Marginal cost: Price charged per unit by supplier
+    \item Fixed cost: Cost of establishing the relation or routine upkeep costs that are independent of quantity.
+\end{itemize}
+The network literature focuses on input marginal costs as determinant of network structure, and shock dynamics. I argue fixed costs are important for rationalizing observed market structure and explaining dynamics.
+Kelly et al 2013 document that volatility rises as firm concentration increases; I argue this is an endogenous process.
+\begin{align*}
+   \uparrow  \text{Volatility} \implies \uparrow \text{Resilience Importance} \implies \uparrow \text{Concentration} \implies \uparrow \text{Volatility}
+\end{align*}
+
+It is hard to cleanly distinguish fixed costs empirically, but I will highlight a few examples that have a fixed quality.
+\begin{itemize}
+    \item Lobbying: Cohen, et al. find that political connections doubled the likelihood of Tariff exemption
+    \item Legal: Contracts with suppliers, Abiding labor laws
+    \item Search: Auditing suppliers, labor recruiters
+    \item Management: Establishing trade routes and delivery times, tailoring production to supplier-specific qualities of inputs
+\end{itemize}
+
+Other returns to scale that can be abstracted with a model with fixed costs.
+\begin{itemize}
+    \item Quotas: Minimum quantity per shipment or large, discrete increments in which orders can be changed are less impactful to large firms.
+\end{itemize}
+
+\section{Model}
+Real GDP:
+\begin{align*}
+    Y = \max_{\mathbf{c}}\mathcal{D}(\mathbf{c})
+\end{align*}
+subject to
+\begin{align*}
+    \sum_i^N p_ic_i = \sum_{f=1}^F w_f L_f + \sum_{i=1}^N \pi_i.
+\end{align*}
+
+CRS firm production:
+\begin{align*}
+    y_i = A_i F(l_{i1},...,l_{iF},x_{i1},...,x_{iN}).
+\end{align*}
+Profits determined by marginal costs of inputs and fixed cost as a function of nonzero inputs.
+\begin{align*}
+    \pi_i = p_i y_i - \sum_{f=1}^F w_f l_{if} - \sum_{j=1}^N p_j x_{ij} - G(\mathbf{1}(li1>0),...,\mathbf{1}(liF>0),\mathbf{1}(xi1>0),...,\mathbf{1}(xiN>0))
+\end{align*}
+
+Issues with model:
+\begin{itemize}
+    \item Continuity for maximization
+\end{itemize}
+\end{document}

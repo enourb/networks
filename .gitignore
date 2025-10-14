@@ -1,0 +1,49 @@
+# Data folder - DO NOT TRACK
+data/
+
+# Python
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
+.Python
+*.so
+*.egg
+*.egg-info/
+dist/
+build/
+.env
+.venv
+venv/
+
+# Jupyter Notebook
+.ipynb_checkpoints/
+*/.ipynb_checkpoints/*
+
+# IDEs
+.vscode/
+.idea/
+*.swp
+*.swo
+*~
+
+# OS
+.DS_Store
+.DS_Store?
+._*
+.Spotlight-V100
+.Trashes
+Thumbs.db
+Desktop.ini
+
+# Large files
+*.csv
+*.parquet
+*.hdf5
+*.h5
+*.pkl
+*.pickle
+
+# Logs
+*.log
+logs/
